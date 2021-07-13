@@ -1,1 +1,98 @@
+<<<<<<< HEAD
 <html></html>
+=======
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"><title>京都</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  
+ <body>
+   <div id = "app">
+    <div id="top">
+      <ul>
+        <li><a href = "#features">３つの特徴</a></li>
+        <li><a href = "#spots">おすすめスポット</a></li>
+        <li><a href = "#contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div id="header">
+      <div id="text">
+        <h1 class="font">きょうと</h1>
+      </div>
+    </div>
+    <div id="features" class="original">
+      <h2>３つの特徴</h2>
+      <div id="feature-content" class="container">
+        <div class="feature row">
+  	        <feature-fpost class = "col-lg-4" v-for="fpost in fposts" v-bind:key="fpost.id" v-bind:fpost="fpost"></feature-fpost>
+        </div>
+      </div>
+      
+    </div>
+    <div id="spots">
+      <h2>おすすめスポット</h2>
+  <!--spots-content-->
+        <div class = spot-content>
+	        <spot-post v-for="post in posts" v-bind:key="post.id" v-bind:post="post"></spot-post>
+	      </div>
+      
+    </div>
+    <div id="contact">
+      <h2>お問い合わせ</h2>
+      <div class="Form">
+        <div class="Form-Item">
+          <p class="Form-Item-Label">
+            <span class="Form-Item-Label-Required">必須</span>会社名
+          </p>
+          <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+          <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+          <textarea class="Form-Item-Textarea"></textarea>
+        </div>
+        <input type="submit" class="Form-Btn" value="送信する">
+      </div>
+      
+    </div>
+    <div id="tel">
+      <p>お電話でのご相談：××-××××-××××<br>住所：東京都○○○○○○○○○</p>
+      
+    </div>
+    <div id="footer">
+      <small>&copy;ポートフォリオ観光, 2021.</small>
+      
+    </div>
+   </div>
+   
+       <!--topに戻るボタン-->
+    <a href="#" class="back-to-top">▲</a>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script src="jquery.bgswitcher.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+    <script src="main.js"></script>
+    <!--<script src="second.js"></script>-->
+  </body>
+</html>
+>>>>>>> feee7bfc649f0f91cb86d4bd01f7e7431de3e2cb
